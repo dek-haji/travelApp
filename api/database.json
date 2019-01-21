@@ -18,20 +18,6 @@
   ],
   "interests": [
     {
-      "placeId": "test",
-      "name": "test",
-      "description": "test",
-      "cost": "test",
-      "id": 34
-    },
-    {
-      "placeId": "1",
-      "name": "dek",
-      "description": "London is cool place",
-      "cost": "$1200",
-      "id": 35
-    },
-    {
       "placeId": "2",
       "name": "my name is haji",
       "description": "planning to travel london soon",
@@ -44,6 +30,97 @@
       "description": "test",
       "cost": "test",
       "id": 37
+    },
+    {
+      "placeId": "3",
+      "name": "",
+      "description": "",
+      "cost": "",
+      "id": 38
+    },
+    {
+      "placeId": "2",
+      "name": "",
+      "description": "",
+      "cost": "",
+      "id": 39
+    },
+    {
+      "placeId": "2",
+      "name": "",
+      "description": "",
+      "cost": "",
+      "id": 40
+    },
+    {
+      "placeId": "2",
+      "name": "",
+      "description": "",
+      "cost": "",
+      "id": 41
+    },
+    {
+      "placeId": "2",
+      "name": "",
+      "description": "",
+      "cost": "",
+      "id": 42
+    },
+    {
+      "placeId": "2",
+      "name": "",
+      "description": "",
+      "cost": "",
+      "id": 44
+    },
+    {
+      "placeId": "2",
+      "name": "hj",
+      "description": "hj",
+      "cost": "hj",
+      "id": 45
+    },
+    {
+      "placeId": "3",
+      "name": "",
+      "description": "",
+      "cost": "",
+      "id": 46
+    },
+    {
+      "placeId": "2",
+      "name": "",
+      "description": "",
+      "cost": "",
+      "id": 47
+    },
+    {
+      "placeId": "1",
+      "name": "",
+      "description": "",
+      "cost": "",
+      "id": 48
+    },
+    {
+      "placeId": "1",
+      "name": "",
+      "description": "",
+      "cost": "",
+      "id": 49
+    },
+    {
+      "placeId": "1",
+      "name": "",
+      "description": "",
+      "cost": "",
+      "id": 50
+    },
+    {
+      "placeId": "3",
+      "name": "",
+      "description": "",
+      "cost": "",
+      "id": 51
     }
   ]
 }

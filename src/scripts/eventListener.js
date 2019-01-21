@@ -9,7 +9,7 @@ const eventListeners = {
         let description = document.querySelector(".interestDescription").value
         let cost = document.querySelector(".interestCost").value
         let place = document.querySelector("#mySelect").value
-
+console.log(place)
         let interestObject = {
             placeId: place,
             name: name,

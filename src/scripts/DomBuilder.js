@@ -22,7 +22,7 @@ const interestBuilder = {
     interestFormCreater() {
         data.getPlaces()
             .then(places => {
-                let interestForm = document.createElement("form");
+                let interestForm = document.createElement("div");
                 interestForm.classList.add("interestForm")
                 let interestFormContainer = document.querySelector(".interestContainerForm")
                 interestFormContainer.appendChild(interestForm)
@@ -56,6 +56,7 @@ const interestBuilder = {
                 interestForm.appendChild(costLabel)
                 interestForm.appendChild(costInput)
 
+
                 let placeDropDown = document.createElement("select")
                 placeDropDown.setAttribute("id", "mySelect")
                 let LondonOption = document.createElement("option")
@@ -70,7 +71,7 @@ const interestBuilder = {
 
                 let berlinOptions = document.createElement("option")
                 berlinOptions.setAttribute("value", `${places[2].id}`)
-                berlinOptions.textContent = `${places[2].id}`
+                berlinOptions.textContent = `${places[2].name}`
 
 
 
@@ -90,6 +91,7 @@ const interestBuilder = {
             })
     },
     interestDom(value) {
+        // console.log(value)
         let interestContainer = document.createElement("container");
         interestContainer.setAttribute("id", `interest--${value.id}`);
 
@@ -109,18 +111,13 @@ const interestBuilder = {
         let cost = document.createElement("p")
         cost.innerHTML = `cost: <p>${value.cost}</p>`
         interestContainer.appendChild(cost)
-
-        let review = document.createElement("p")
-        review.innerHTML = `Place: <p>${value.review}</p>`
-        review.setAttribute("id", `review--${value.id}`)
-        interestContainer.appendChild(review)
-
+        let placeId = document.createElement("p")
+        placeId.innerHTML = `place: <p> ${value.placeId}`
+        interestContainer.appendChild(placeId)
 
         let interestEditButton = document.createElement("button")
         interestEditButton.innerText = "Edit"
         interestEditButton.setAttribute("id", `interestedit--${value.id}`)
-
-
         let interestDeleteButton = document.createElement("button")
         interestDeleteButton.innerText = "Delete";
         interestDeleteButton.setAttribute("id", `interest--${value.id}`)
@@ -129,7 +126,8 @@ const interestBuilder = {
         interestContainer.appendChild(interestEditButton)
         interestContainer.appendChild(interestDeleteButton)
 
-
+        let breakTag = document.createElement("hr")
+        interestContainer.appendChild(breakTag);
 
         data.getAllInterest()
             .then(() => {
@@ -142,7 +140,7 @@ const interestBuilder = {
     },
     interestEditForm() {
         let interestEditId = event.target.id;
-        interestId = interestEditId.split("--")[1]
+        let interestId = interestEditId.split("--")[1]
 
         let costEditfield = document.createElement("input")
         costEditfield.setAttribute("type", "text")
@@ -159,20 +157,19 @@ const interestBuilder = {
 
         let saveButton = document.createElement("button")
         saveButton.textContent = "Save"
-
         data.getInterest(interestId)
             .then(interestId => {
-                console.log(interest.cost)
-                costEditfield.value = interest.value
-                reviewEditField.value = review.value
+                console.log(interestId)
+                costEditfield.value = cost.value
+                reviewEditField.value = description.value
                 saveButton.addEventListener("click", () => {
-                    let placeId = interest.placeId
-                    let name = interest.name
-                    let description = interest.description
+                    let placeId = interests.placeId
+                    let name = interests.name
+                    let description = interests.description
 
 
                     let editedInterest = {
-                        placeId: id,
+                        placeId: placeDropDown.value,
                         name: name,
                         description: description,
                         cost: costEditfield.value,
