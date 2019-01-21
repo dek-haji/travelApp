@@ -5,11 +5,11 @@ import DOMappend from "./DomAppend"
 
 const interestBuilder = {
     pageLoad() {
-        let outputContainer = document.querySelector(".output")
+        let outputContainer = document.querySelector(".input")
         outputContainer.innerHTML = "";
         let interestFormContainer = document.createElement("container")
         interestFormContainer.classList.add("interestContainerForm");
-        interestFormContainer.innerHTML = "<h2 class='interestFormHeader'>Add Your Interest</h2>";
+        interestFormContainer.innerHTML = "<h2 class='interestFormHeader'>Add Your Interest</h2>" ;
         outputContainer.appendChild(interestFormContainer)
 
         let placeContainer = document.createElement("container")
@@ -41,7 +41,8 @@ const interestBuilder = {
                 let interestDescriptionInput = document.createElement("input")
                 let interestDescriptionLabel = document.createElement("label");
                 interestDescriptionLabel.setAttribute("type", "text");
-                interestNameInput.classList.add("interestDescription");
+                interestDescriptionInput.classList.add("interestDescription");
+                interestDescriptionLabel.textContent = "Description:"
                 interestForm.appendChild(interestDescriptionLabel)
                 interestForm.appendChild(interestDescriptionInput)
 
@@ -51,8 +52,9 @@ const interestBuilder = {
                 let costLabel = document.createElement("label")
                 costInput.classList.add("interestCost")
                 costLabel.setAttribute("type", "text")
-                interestForm.appendChild(costInput)
+                costLabel.textContent = "Cost:"
                 interestForm.appendChild(costLabel)
+                interestForm.appendChild(costInput)
 
                 let placeDropDown = document.createElement("select")
                 placeDropDown.setAttribute("id", "mySelect")
@@ -88,11 +90,11 @@ const interestBuilder = {
             })
     },
     interestDom(value) {
-        let interestContainer = document.createElement("container");
-        interestContainer.setAttribute("id", `interest--${value.id}`);
+        let interestContainer = document.querySelector(".output");
+        interestContainer.setAttribute("id", `interest--${value.placeId}`);
 
         let place = document.createElement("h2")
-        place.innerHTML = `Place: <p>${value.place.name}</p>`
+        place.innerHTML = `Place: <p>${place.value}</p>`
         interestContainer.appendChild(place)
 
         let name = document.createElement("h3")

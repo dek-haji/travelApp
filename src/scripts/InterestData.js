@@ -16,7 +16,7 @@ const data = {
     },
 
     getAllInterest() {
-        return fetch("http://localhost:8088/interests/?_expand=place")
+        return fetch("http://localhost:8088/interests/")
         .then(response => response.json())
     },
 
@@ -30,7 +30,7 @@ const data = {
     },
 
     getInterest(id) {
-       return fetch (`http://localhost:8088/interests/${id}?_expand=place`)
+       return fetch (`http://localhost:8088/interests/${id}`)
        .then(response => response.json())
     },
 
