@@ -160,21 +160,22 @@ const interestBuilder = {
         data.getInterest(interestId)
             .then(interestId => {
                 console.log(interestId)
-                costEditfield.value = cost.value
-                reviewEditField.value = description.value
-                saveButton.addEventListener("click", () => {
-                    let placeId = interests.placeId
-                    let name = interests.name
-                    let description = interests.description
 
+                let costEdit = document.querySelector(".costEditField").value
+                let reviewEdit = document.querySelector(".reviewEditField").value
+                saveButton.addEventListener("click", () => {
+                   let costId = interestId.cost
+                   let descriptionId = interestId.description;
+                    let placeId = interestId.placeId;
+                    let name = interestId.name;
 
                     let editedInterest = {
-                        placeId: placeDropDown.value,
+                        placeId: placeId,
                         name: name,
-                        description: description,
-                        cost: costEditfield.value,
+                        description: descriptionId,
+                        cost: costId
                     }
-                    data.editInterest(interest.id, editedInterest)
+                    data.editInterest(interestsId, editedInterest)
                         .then(() => {
                             DOMEappend.appendToDom();
 

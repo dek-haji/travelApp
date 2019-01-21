@@ -41,11 +41,8 @@ const data = {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(description)
-        })
-
-    }
-
-
+})
+}
 }
 
 export default data;

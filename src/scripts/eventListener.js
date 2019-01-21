@@ -29,7 +29,7 @@ console.log(place)
         let InterestDeleteId = event.target.id.split("--")[1]
                 data.deleteInterest(InterestDeleteId)
                 .then(() => {
-                    DOMbuilder.onPageLoad();
+                    DOMbuilder.pageLoad();
                     DOMbuilder.interestFormCreator();
                 })
     },
