@@ -18,204 +18,32 @@
   ],
   "interests": [
     {
-      "placeId": "2",
+      "placeId": "test",
       "name": "test",
       "description": "test",
       "cost": "test",
-      "review": "",
-      "id": 1
+      "id": 34
     },
     {
       "placeId": "1",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 2
-    },
-    {
-      "placeId": "1",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 3
-    },
-    {
-      "placeId": "1",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 4
-    },
-    {
-      "placeId": "1",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 5
-    },
-    {
-      "placeId": "1",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 6
-    },
-    {
-      "placeId": "1",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 7
-    },
-    {
-      "placeId": "3",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 8
-    },
-    {
-      "placeId": "1",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 9
+      "name": "dek",
+      "description": "London is cool place",
+      "cost": "$1200",
+      "id": 35
     },
     {
       "placeId": "2",
-      "name": "test101",
-      "description": "test101",
-      "cost": "test101",
-      "review": "",
-      "id": 10
-    },
-    {
-      "placeId": "1",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 11
-    },
-    {
-      "placeId": "1",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 12
-    },
-    {
-      "placeId": "3",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 13
-    },
-    {
-      "placeId": "1",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 14
-    },
-    {
-      "placeId": "1",
-      "name": "dek",
-      "description": "dek",
-      "cost": "dek",
-      "review": "",
-      "id": 15
-    },
-    {
-      "placeId": "1",
-      "name": "dek",
-      "description": "dek",
-      "cost": "dek",
-      "review": "",
-      "id": 16
-    },
-    {
-      "placeId": "1",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 17
-    },
-    {
-      "placeId": "1",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 18
-    },
-    {
-      "placeId": "1",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 19
-    },
-    {
-      "placeId": "1",
-      "name": "dsd",
-      "description": "dsd",
-      "cost": "dsd",
-      "review": "",
-      "id": 20
-    },
-    {
-      "placeId": "1",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 21
-    },
-    {
-      "placeId": "1",
-      "name": "hi there",
-      "description": "hi there",
-      "cost": "hithere",
-      "review": "",
-      "id": 22
+      "name": "my name is haji",
+      "description": "planning to travel london soon",
+      "cost": "$1200",
+      "id": 36
     },
     {
       "placeId": "1",
       "name": "test",
       "description": "test",
       "cost": "test",
-      "review": "",
-      "id": 23
-    },
-    {
-      "placeId": "1",
-      "name": "fd",
-      "description": "fdf",
-      "cost": "df",
-      "review": "",
-      "id": 24
-    },
-    {
-      "placeId": "1",
-      "name": "",
-      "description": "",
-      "cost": "",
-      "review": "",
-      "id": 25
+      "id": 37
     }
   ]
 }

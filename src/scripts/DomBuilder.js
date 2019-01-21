@@ -90,12 +90,12 @@ const interestBuilder = {
             })
     },
     interestDom(value) {
-        let interestContainer = document.querySelector(".output");
-        interestContainer.setAttribute("id", `interest--${value.placeId}`);
+        let interestContainer = document.createElement("container");
+        interestContainer.setAttribute("id", `interest--${value.id}`);
 
-        let place = document.createElement("h2")
-        place.innerHTML = `Place: <p>${place.value}</p>`
-        interestContainer.appendChild(place)
+        // let place = document.createElement("h2")
+        // place.innerHTML = `Place: <p>${value.name}</p>`
+        // interestContainer.appendChild(place)
 
         let name = document.createElement("h3")
         name.innerHTML = `name: <p>${value.name}</p>`
@@ -111,7 +111,7 @@ const interestBuilder = {
         interestContainer.appendChild(cost)
 
         let review = document.createElement("p")
-        review.innerHTML = `review: <p>${value.review}</p>`
+        review.innerHTML = `Place: <p>${value.review}</p>`
         review.setAttribute("id", `review--${value.id}`)
         interestContainer.appendChild(review)
 
@@ -176,7 +176,6 @@ const interestBuilder = {
                         name: name,
                         description: description,
                         cost: costEditfield.value,
-                        review: reviewEditField.value
                     }
                     data.editInterest(interest.id, editedInterest)
                         .then(() => {
